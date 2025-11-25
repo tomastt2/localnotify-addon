@@ -1,0 +1,2 @@
+#!/usr/bin/execlineb -P
+python3 /main.py
