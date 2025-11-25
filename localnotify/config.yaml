@@ -2,12 +2,19 @@ name: "Local Notify"
 version: "1.0.3"
 slug: "localnotify"
 description: "Simple local HTTP notify endpoint"
-url: "https://github.com/tomastt2/localnotify-addon"
 arch:
   - aarch64
-startup: application
+startup: services
 boot: auto
-host_network: true
+
+build_from:
+  aarch64: "ghcr.io/home-assistant/aarch64-base:latest"
+
+ports:
+  8790/tcp: 8790
+
 options: {}
 schema: {}
-image: "local/{arch}-addon-localnotify"
+
+hassio_api: true
+homeassistant_api: true
