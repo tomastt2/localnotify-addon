@@ -1,1 +1,5 @@
-{ "name":"Local Notify Repo", "url":"", "maintainer":"tomastt2" }
+{
+  "name": "Local Notify Add-on Repository",
+  "url": "https://github.com/tomastt2/localnotify-addon",
+  "maintainer": "Tomáš Tencer"
+}
