@@ -1,0 +1,19 @@
+name: "Local Notify"
+version: "1.0.4"
+slug: "localnotify"
+description: "Simple HTTP endpoint to trigger Home Assistant notify services."
+arch:
+  - aarch64
+  - amd64
+  - armv7
+  - i386
+startup: services
+boot: auto
+ports:
+  8790/tcp: 8790
+options:
+  listen_port: 8790
+schema:
+  listen_port: int
+hassio_api: true
+homeassistant_api: true
